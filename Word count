@@ -1,0 +1,5 @@
+#write a code to count to count the frequency of charecters 
+s=input("enter a string: ")
+freq=[]
+for ch in set(s):
+    print(ch,s.count(ch))
