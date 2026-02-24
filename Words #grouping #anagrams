@@ -1,0 +1,9 @@
+#grouping #anagrams
+#eat #tea #tan #ate #nat #bat 
+
+words=input("enter words: ").split()
+mp={}
+for word in words:
+    key="".join(sorted(word))
+    mp.setdefault(key,[]).append(word)
+print(list (mp.values()))
