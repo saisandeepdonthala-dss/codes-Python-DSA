@@ -1,0 +1,18 @@
+#grouping #anagrams
+#eat #tea #tan #ate #nat #bat 
+
+words=input("enter words: ").split()
+groups={}
+for word in words:
+    key="".join(sorted(word))
+    if key not in groups:
+        groups[key]=[]
+    groups[key].append(word)
+result= []
+for group in groups.values():
+    result.append(group)
+print("Grouped anagrams : ")
+for group in result:
+    print(list(group))
+        
+
